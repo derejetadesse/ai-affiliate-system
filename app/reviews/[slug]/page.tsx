@@ -5,6 +5,8 @@ const products: Record<
     price: string;
     image: string;
     description: string;
+    features: string[];
+    rating: string;
   }
 > = {
   chair: {
@@ -13,7 +15,14 @@ const products: Record<
     image:
       "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?auto=format&fit=crop&w=1200&q=80",
     description:
-      "This ergonomic chair is designed for comfort during long working hours.",
+      "This ergonomic chair is designed for comfort during long working hours. It supports posture, improves everyday comfort, and works well for home office setups.",
+    features: [
+      "Comfort-focused design",
+      "Modern workspace style",
+      "Good for long sitting sessions",
+      "Simple home office upgrade",
+    ],
+    rating: "4.7/5",
   },
   "laptop-stand": {
     name: "Laptop Stand",
@@ -21,7 +30,14 @@ const products: Record<
     image:
       "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?auto=format&fit=crop&w=1200&q=80",
     description:
-      "Adjustable laptop stand to improve posture and reduce neck strain.",
+      "A practical laptop stand that improves screen height, supports better posture, and helps create a cleaner desk setup.",
+    features: [
+      "Helps reduce neck strain",
+      "Improves desk organization",
+      "Lightweight design",
+      "Good value for the price",
+    ],
+    rating: "4.6/5",
   },
   keyboard: {
     name: "Wireless Keyboard",
@@ -29,7 +45,14 @@ const products: Record<
     image:
       "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&w=1200&q=80",
     description:
-      "Slim wireless keyboard for productivity and clean desk setup.",
+      "A sleek wireless keyboard made for productive work, clean desk aesthetics, and everyday convenience.",
+    features: [
+      "Slim and modern design",
+      "Comfortable typing feel",
+      "Good for office or home",
+      "Pairs well with minimalist setups",
+    ],
+    rating: "4.5/5",
   },
 };
 
@@ -45,7 +68,6 @@ export default async function ProductPage({
     return (
       <main style={{ padding: "40px", fontFamily: "Arial, sans-serif" }}>
         <h1>Product not found</h1>
-        <p>Slug: {slug}</p>
       </main>
     );
   }
@@ -53,84 +75,171 @@ export default async function ProductPage({
   return (
     <main
       style={{
+        background: "#f3f4f6",
         minHeight: "100vh",
-        backgroundColor: "#f8fafc",
-        padding: "40px 20px",
+        padding: "40px 20px 70px",
         fontFamily: "Arial, sans-serif",
       }}
     >
       <div
         style={{
-          maxWidth: "900px",
+          maxWidth: "1200px",
           margin: "0 auto",
-          backgroundColor: "#fff",
-          borderRadius: "18px",
-          overflow: "hidden",
-          boxShadow: "0 8px 24px rgba(0,0,0,0.08)",
-          border: "1px solid #e5e7eb",
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+          gap: "30px",
+          alignItems: "start",
         }}
       >
-        <img
-          src={product.image}
-          alt={product.name}
+        <div
           style={{
-            width: "100%",
-            height: "420px",
-            objectFit: "cover",
-            display: "block",
+            background: "#fff",
+            borderRadius: "20px",
+            overflow: "hidden",
+            boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+            border: "1px solid #e5e7eb",
           }}
-        />
+        >
+          <img
+            src={product.image}
+            alt={product.name}
+            style={{
+              width: "100%",
+              height: "520px",
+              objectFit: "cover",
+              display: "block",
+            }}
+          />
+        </div>
 
-        <div style={{ padding: "30px" }}>
+        <div
+          style={{
+            background: "#fff",
+            borderRadius: "20px",
+            padding: "30px",
+            boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+            border: "1px solid #e5e7eb",
+          }}
+        >
+          <p
+            style={{
+              margin: 0,
+              color: "#f59e0b",
+              fontWeight: 700,
+              letterSpacing: "0.5px",
+            }}
+          >
+            Featured Review
+          </p>
+
           <h1
             style={{
-              fontSize: "36px",
-              fontWeight: "bold",
+              fontSize: "42px",
+              lineHeight: 1.1,
+              margin: "12px 0 16px",
               color: "#111827",
-              marginBottom: "12px",
             }}
           >
             {product.name}
           </h1>
 
-          <p
+          <div
             style={{
-              fontSize: "24px",
-              fontWeight: "bold",
-              color: "#2563eb",
-              marginBottom: "20px",
+              display: "flex",
+              gap: "14px",
+              alignItems: "center",
+              flexWrap: "wrap",
+              marginBottom: "18px",
             }}
           >
-            {product.price}
-          </p>
+            <span
+              style={{
+                fontSize: "30px",
+                fontWeight: 800,
+                color: "#2563eb",
+              }}
+            >
+              {product.price}
+            </span>
+
+            <span
+              style={{
+                background: "#ecfdf5",
+                color: "#065f46",
+                padding: "7px 12px",
+                borderRadius: "999px",
+                fontWeight: 700,
+                fontSize: "14px",
+              }}
+            >
+              Rating: {product.rating}
+            </span>
+          </div>
 
           <p
             style={{
-              fontSize: "18px",
-              lineHeight: "1.7",
-              color: "#374151",
+              color: "#4b5563",
+              fontSize: "17px",
+              lineHeight: 1.8,
               marginBottom: "24px",
             }}
           >
             {product.description}
           </p>
 
-          <a
-            href="https://amazon.com"
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
             style={{
-              display: "inline-block",
-              marginTop: "20px",
-              padding: "12px 20px",
-              background: "orange",
-              color: "white",
-              borderRadius: "8px",
-              textDecoration: "none",
+              background: "#f9fafb",
+              border: "1px solid #e5e7eb",
+              borderRadius: "14px",
+              padding: "18px",
+              marginBottom: "26px",
             }}
           >
-            Buy on Amazon
-          </a>
+            <h3 style={{ marginTop: 0, marginBottom: "12px", color: "#111827" }}>
+              Why people like it
+            </h3>
+
+            <ul style={{ margin: 0, paddingLeft: "20px", color: "#374151", lineHeight: 1.8 }}>
+              {product.features.map((feature) => (
+                <li key={feature}>{feature}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
+            <a
+              href="https://amazon.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "inline-block",
+                padding: "14px 22px",
+                background: "#f59e0b",
+                color: "white",
+                borderRadius: "10px",
+                textDecoration: "none",
+                fontWeight: 700,
+              }}
+            >
+              Buy on Amazon
+            </a>
+
+            <a
+              href="/reviews"
+              style={{
+                display: "inline-block",
+                padding: "14px 22px",
+                background: "#111827",
+                color: "white",
+                borderRadius: "10px",
+                textDecoration: "none",
+                fontWeight: 700,
+              }}
+            >
+              Back to Reviews
+            </a>
+          </div>
         </div>
       </div>
     </main>
