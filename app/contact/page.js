@@ -4,7 +4,7 @@ export default function ContactPage() {
       <h1>Contact Us</h1>
 
       <p>
-        Thank you for visiting Dereje Reviews.
+        Thank you for visiting Our Reviews.
       </p>
 
       <p>
@@ -12,7 +12,7 @@ export default function ContactPage() {
       </p>
 
       <p style={{ marginTop: "20px", fontSize: "18px" }}>
-        📧 Email: <strong>aiworkflowhome@gmail.com</strong>
+        📧 Email: <strong>deretadedere@gmail.com</strong>
       </p>
 
       <p style={{ marginTop: "20px" }}>
