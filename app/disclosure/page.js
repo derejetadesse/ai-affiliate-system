@@ -4,7 +4,7 @@ export default function DisclosurePage() {
       <h1>Affiliate Disclosure</h1>
 
       <p>
-        Dereje Reviews participates in affiliate marketing programs. This means
+        This website participates in affiliate marketing programs. This means
         some links on this website may be affiliate links.
       </p>
 
@@ -14,7 +14,7 @@ export default function DisclosurePage() {
       </p>
 
       <p>
-        These commissions help support this website and allow us to continue
+        These commissions help support our website and allow us to continue
         publishing reviews and recommendations.
       </p>
 
