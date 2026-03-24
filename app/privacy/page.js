@@ -4,7 +4,7 @@ export default function PrivacyPage() {
       <h1>Privacy Policy</h1>
 
       <p>
-        At Dereje Reviews, we respect your privacy. This page explains how
+        At Our Reviews, we respect your privacy. This page explains how
         information may be collected and used when you visit this website.
       </p>
 
