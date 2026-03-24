@@ -56,6 +56,9 @@ export default function RootLayout({
               <a href="/privacy" style={{ color: "#e5e7eb", textDecoration: "none" }}>
               Privacy
               </a>
+              <a href="/contact" style={{ color: "#e5e7eb", textDecoration: "none" }}>
+              Contact
+              </a>
             </nav>
           </div>
         </header>
