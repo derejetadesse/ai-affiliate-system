@@ -2,7 +2,6 @@ const products = [
   {
     slug: "chair",
     name: "Ergonomic Chair",
-    price: "$99",
     image:
       "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?auto=format&fit=crop&w=1000&q=80",
     description: "Comfortable office chair for long work hours and better posture.",
@@ -11,7 +10,6 @@ const products = [
   {
     slug: "laptop-stand",
     name: "Laptop Stand",
-    price: "$29",
     image:
       "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?auto=format&fit=crop&w=1000&q=80",
     description: "Adjustable stand for airflow, posture, and cleaner desk setup.",
@@ -20,7 +18,6 @@ const products = [
   {
     slug: "keyboard",
     name: "Wireless Keyboard",
-    price: "$49",
     image:
       "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&w=1000&q=80",
     description: "Slim wireless keyboard for productivity and everyday comfort.",
