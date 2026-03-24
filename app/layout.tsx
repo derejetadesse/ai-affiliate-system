@@ -45,14 +45,16 @@ export default function RootLayout({
             </a>
 
             <nav style={{ display: "flex", gap: "18px" }}>
+              <a href="/disclosure" style={{ color: "white", textDecoration: "none" }}>
+              Disclosure</a>
               <a href="/reviews" style={{ color: "#e5e7eb", textDecoration: "none" }}>
                 Reviews
               </a>
               <a href="/about" style={{ color: "#e5e7eb", textDecoration: "none" }}>
                 About
               </a>
-              <a href="/privacy-policy" style={{ color: "#e5e7eb", textDecoration: "none" }}>
-                Privacy
+              <a href="/privacy" style={{ color: "#e5e7eb", textDecoration: "none" }}>
+              Privacy
               </a>
             </nav>
           </div>
