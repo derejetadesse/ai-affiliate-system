@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Dereje Reviews",
+  title: "OurReviews",
   description: "Product reviews and recommendations",
 };
 
@@ -41,7 +41,7 @@ export default function RootLayout({
                 fontWeight: 800,
               }}
             >
-              Dereje Reviews
+              Our Reviews
             </a>
 
             <nav style={{ display: "flex", gap: "18px" }}>
@@ -74,7 +74,7 @@ export default function RootLayout({
           }}
         >
           <div style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "center" }}>
-            <p style={{ margin: "0 0 8px" }}>© 2026 Dereje Reviews</p>
+            <p style={{ margin: "0 0 8px" }}>© 2026 Our Reviews</p>
             <p style={{ margin: 0 }}>
               As an Amazon Associate, I earn from qualifying purchases.
             </p>

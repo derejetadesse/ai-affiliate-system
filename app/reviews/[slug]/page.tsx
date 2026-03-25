@@ -11,7 +11,6 @@ const products: Record<
 > = {
   chair: {
     name: "Ergonomic Chair",
-    price: "$99",
     image:
       "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?auto=format&fit=crop&w=1200&q=80",
     description:
@@ -26,9 +25,7 @@ const products: Record<
   },
   "laptop-stand": {
     name: "Laptop Stand",
-    price: "$29",
-    image:
-      "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?auto=format&fit=crop&w=1200&q=80",
     description:
       "A practical laptop stand that improves screen height, supports better posture, and helps create a cleaner desk setup.",
     features: [

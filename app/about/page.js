@@ -1,16 +1,9 @@
 export default function AboutPage() {
   return (
     <div style={{ maxWidth: "900px", margin: "0 auto", padding: "50px 20px" }}>
-      <h1>About Us</h1>
-
+      <h1>About Dereje Reviews</h1>
       <p>
-        Welcome to our platform, dedicated to helping you discover useful,
-        affordable, and high-quality products for everyday life.
-      </p>
-
-      <p>
-        Our goal is simple — to make your buying decisions easier by providing
-        clear, honest, and practical product recommendations.
+        Welcome to Dereje Reviews — your trusted source for honest, practical, and affordable product recommendations.
       </p>
 
       <h2 style={{ marginTop: "30px" }}>What We Do</h2>
