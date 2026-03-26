@@ -6,9 +6,9 @@ export default function ProductPage() {
       </h1>
 
       <img
-        src="https://images.unsplash.com/photo-1505843490701-5be5d1b29956?auto=format&fit=crop&w=1000&q=80"
+        src="/tralt-chair.png"
         alt="TRALT Office Chair"
-        className="w-full rounded-lg mb-6"
+        className="w-full max-w-md rounded-lg mb-6 mx-auto"
       />
 
       <p className="text-gray-700 mb-6 leading-7">
