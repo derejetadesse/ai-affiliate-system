@@ -1,47 +1,42 @@
-export default function HomePage() {
+export default function ProductPage() {
   return (
-    <main className="min-h-screen bg-white text-gray-900">
-      
-      <section className="text-center py-12">
-        <h1 className="text-4xl font-bold">
-          Our Reviews
-        </h1>
-        <p className="mt-4 text-gray-600">
-          We review the best products so you can make smart buying decisions.
-        </p>
-      </section>
+    <main className="max-w-4xl mx-auto px-6 py-16 text-gray-900">
+      <h1 className="text-3xl font-bold mb-6">
+        TRALT Ergonomic Office Chair Review
+      </h1>
 
-      <section className="mx-auto max-w-7xl px-6 py-16">
-        <h2 className="text-3xl font-bold mb-10 text-center">
-          Featured Product
-        </h2>
+      <img
+        src="https://images.unsplash.com/photo-1505843490701-5be5d1b29956?auto=format&fit=crop&w=1000&q=80"
+        alt="TRALT Office Chair"
+        className="w-full rounded-lg mb-6"
+      />
 
-        <div className="max-w-md mx-auto overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-lg transition">
-          <img
-            src="https://images.unsplash.com/photo-1505843490701-5be5d1b29956?auto=format&fit=crop&w=1000&q=80"
-            alt="TRALT Office Chair"
-            className="h-64 w-full object-cover"
-          />
+      <p className="text-gray-700 leading-7 mb-6">
+        The TRALT ergonomic office chair is built for long work hours, comfort,
+        and daily support. It is designed to support the head, back, hips, and
+        arms, while the adjustable lumbar support helps improve sitting posture.
+        The breathable mesh design and smooth wheels make it a strong option for
+        home offices, study spaces, and desk setups.
+      </p>
 
-          <div className="p-6">
-            <h3 className="text-xl font-bold">
-              TRALT Ergonomic Office Chair
-            </h3>
+      <h2 className="text-2xl font-semibold mb-3">Key Features</h2>
+      <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-8">
+        <li>Ergonomic support for head, back, hips, and arms</li>
+        <li>Adjustable lumbar support and seat height</li>
+        <li>Breathable mesh back and comfortable seat</li>
+        <li>330 lb maximum weight capacity</li>
+        <li>360° swivel base with smooth rolling casters</li>
+        <li>Useful for office work, study, and gaming</li>
+      </ul>
 
-            <p className="mt-3 text-sm text-gray-600">
-              Comfortable ergonomic chair with mesh back support and high-back design for long work hours.
-            </p>
-
-            <a
-              href="/reviews/tralt-office-chair"
-              className="mt-5 inline-block rounded-lg bg-slate-900 px-5 py-3 text-sm font-semibold text-white hover:bg-slate-700"
-            >
-              Read Review
-            </a>
-          </div>
-        </div>
-      </section>
-
+      <a
+        href="https://amzn.to/4uOyXKR"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block rounded-lg bg-yellow-400 px-6 py-3 font-semibold text-black hover:bg-yellow-300"
+      >
+        View on Amazon
+      </a>
     </main>
   );
 }
