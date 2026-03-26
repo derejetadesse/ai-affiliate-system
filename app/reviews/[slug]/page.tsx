@@ -10,17 +10,18 @@ const products: Record<
   }
 > = {
   chair: {
-    name: "Ergonomic Chair",
-    image:
-      "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?auto=format&fit=crop&w=1200&q=80",
-    description:
-      "This ergonomic chair is designed for comfort during long working hours. It supports posture, improves everyday comfort, and works well for home office setups.",
-    features: [
-      "Comfort-focused design",
-      "Modern workspace style",
-      "Good for long sitting sessions",
-      "Simple home office upgrade",
-    ],
+  name: "Ergonomic Chair",
+  image:
+    "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?auto=format&fit=crop&w=1200&q=80",
+  description:
+    "This ergonomic chair is designed for comfort during long working hours. It supports posture, improves everyday comfort, and works well for home office setups.",
+  features: [
+    "Comfort-focused design",
+    "Modern workspace style",
+    "Good for long sitting sessions",
+    "Simple home office upgrade",
+  ],
+},
     rating: "4.7/5",
   },
   "laptop-stand": {
