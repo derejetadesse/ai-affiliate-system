@@ -1,40 +1,57 @@
-export default function ProductPage() {
+import Link from "next/link";
+
+const products = [
+  {
+    slug: "chair",
+    name: "Ergonomic Office Chair",
+    image:
+      "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?auto=format&fit=crop&w=800&q=80",
+    description: "Comfortable chair for long work hours.",
+  },
+  {
+    slug: "standing-desk",
+    name: "Standing Desk",
+    image: "/products/standing-desk.png",
+    description: "Adjustable desk with wheels for flexible workspace.",
+  },
+];
+
+export default function HomePage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-16">
-      <h1 className="text-3xl font-bold mb-6">
-        TRALT Ergonomic Office Chair Review
+    <main className="max-w-6xl mx-auto px-6 py-12">
+      <h1 className="text-3xl font-bold mb-8 text-center">
+        Our Top Picks
       </h1>
 
-      <img
-        src="/tralt-chair.png"
-        alt="TRALT Office Chair"
-        className="w-full max-w-md rounded-lg mb-6 mx-auto"
-      />
+      <div className="grid md:grid-cols-2 gap-8">
+        {products.map((product) => (
+          <div
+            key={product.slug}
+            className="border rounded-xl p-4 shadow hover:shadow-lg transition"
+          >
+            <img
+              src={product.image}
+              alt={product.name}
+              className="w-full h-60 object-cover rounded-lg mb-4"
+            />
 
-      <p className="text-gray-700 mb-6 leading-7">
-        The TRALT ergonomic office chair is designed for long work hours and everyday comfort.
-        It includes head, back, hip, and arm support, plus adjustable lumbar support for a better sitting experience.
-        The breathable mesh back and smooth wheels make it a practical choice for home offices and study spaces.
-      </p>
+            <h2 className="text-xl font-semibold mb-2">
+              {product.name}
+            </h2>
 
-      <h2 className="text-2xl font-semibold mb-3">Key Features</h2>
-      <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-8">
-        <li>Ergonomic support for head, back, hips, and arms</li>
-        <li>Adjustable lumbar support and seat height</li>
-        <li>Breathable mesh back design</li>
-        <li>330 lb maximum weight capacity</li>
-        <li>360° swivel base and smooth rolling casters</li>
-        <li>Suitable for office work, study, and gaming</li>
-      </ul>
+            <p className="text-gray-600 mb-4">
+              {product.description}
+            </p>
 
-      <a
-        href="https://amzn.to/4uOyXKR"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block rounded-lg bg-yellow-400 px-6 py-3 font-semibold text-black hover:bg-yellow-300"
-      >
-        View on Amazon
-      </a>
+            <Link
+              href={`/reviews/${product.slug}`}
+              className="inline-block bg-yellow-400 px-4 py-2 rounded font-semibold"
+            >
+              View Review
+            </Link>
+          </div>
+        ))}
+      </div>
     </main>
   );
 }
