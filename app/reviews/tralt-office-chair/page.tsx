@@ -6,11 +6,10 @@ export default function ProductPage() {
       </h1>
 
       <img
-        src="https://images.unsplash.com/photo-1505843490701-5be5d1b29956?auto=format&fit=crop&w=1000&q=80"
-        alt="TRALT Office Chair"
-        className="w-full rounded-lg mb-6"
-      />
-
+  src="https://images.unsplash.com/photo-1580480055273-228ff5388ef8?auto=format&fit=crop&w=1000&q=80"
+  alt="TRALT Office Chair"
+  className="w-full rounded-lg mb-6"
+/>
       <p className="text-gray-700 leading-7 mb-6">
         The TRALT ergonomic office chair is built for long work hours, comfort,
         and daily support. It is designed to support the head, back, hips, and
